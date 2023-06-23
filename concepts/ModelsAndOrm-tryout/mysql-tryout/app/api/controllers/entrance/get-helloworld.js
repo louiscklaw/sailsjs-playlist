@@ -7,13 +7,14 @@ module.exports = {
 
   exits: {
     success: {
-      description: 'New user account was created successfully.'
+      description: 'New user account was created successfully.',
     },
     invalid: {
       responseType: 'badRequest',
       description: 'The provided fullName, password and/or email address are invalid.',
-      extendedDescription: 'If this request was sent from a graphical user interface, the request ' +
-        'parameters should have been validated/coerced _before_ they were sent.'
+      extendedDescription:
+        'If this request was sent from a graphical user interface, the request ' +
+        'parameters should have been validated/coerced _before_ they were sent.',
     },
     emailAlreadyInUse: {
       statusCode: 409,
@@ -21,8 +22,7 @@ module.exports = {
     },
   },
 
-  fn: async function ({ }) {
+  fn: async function ({}) {
     sails.log.info('get helloworld');
-  }
-
+  },
 };

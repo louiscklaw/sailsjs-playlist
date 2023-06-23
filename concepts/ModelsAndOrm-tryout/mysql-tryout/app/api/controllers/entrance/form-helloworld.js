@@ -1,16 +1,15 @@
 module.exports = {
-  friendlyName: 'View forgot password',
+  friendlyName: 'View helloworld',
 
-  description: 'Display "Forgot password" page.',
+  description: 'Display "Helloworld" page.',
 
   exits: {
     success: {
-      viewTemplatePath: 'pages/entrance/forgot-password',
+      viewTemplatePath: 'pages/entrance/form-helloworld',
     },
 
     redirect: {
       description: 'The requesting user is already logged in.',
-      extendedDescription: 'Logged-in users should change their password in "Account settings."',
       responseType: 'redirect',
     },
   },

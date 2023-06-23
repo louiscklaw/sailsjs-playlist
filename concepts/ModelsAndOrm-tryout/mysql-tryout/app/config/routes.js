@@ -33,8 +33,15 @@ module.exports.routes = {
   'GET /account/password': { action: 'account/view-edit-password' },
   'GET /account/profile': { action: 'account/view-edit-profile' },
 
-  'GET /getHelloworld': { action: 'entrance/get-helloworld' },
+
   'GET /helloworld': { action: 'entrance/view-helloworld' },
+
+  'GET /formPostHelloworld': { action: 'entrance/form-post-helloworld' },
+  'POST  /postFormHelloworld': { action: 'entrance/post-helloworld' },
+
+  'GET /formPutHelloworld': { action: 'entrance/form-put-helloworld' },
+  'PUT   /putFormHelloworld/:id': { action: 'entrance/put-helloworld' },
+
   //  ╔╦╗╦╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╦═╗╔═╗╔═╗╔╦╗╔═╗   ┬   ╔╦╗╔═╗╦ ╦╔╗╔╦  ╔═╗╔═╗╔╦╗╔═╗
   //  ║║║║╚═╗║    ╠╦╝║╣  ║║║╠╦╝║╣ ║   ║ ╚═╗  ┌┼─   ║║║ ║║║║║║║║  ║ ║╠═╣ ║║╚═╗
   //  ╩ ╩╩╚═╝╚═╝  ╩╚═╚═╝═╩╝╩╩╚═╚═╝╚═╝ ╩ ╚═╝  └┘   ═╩╝╚═╝╚╩╝╝╚╝╩═╝╚═╝╩ ╩═╩╝╚═╝
@@ -58,10 +65,13 @@ module.exports.routes = {
   'PUT   /api/v1/account/update-profile': { action: 'account/update-profile' },
   'PUT   /api/v1/account/update-billing-card': { action: 'account/update-billing-card' },
   'PUT   /api/v1/entrance/login': { action: 'entrance/login' },
+
   'POST  /api/v1/entrance/signup': { action: 'entrance/signup' },
   'POST  /api/v1/entrance/send-password-recovery-email': { action: 'entrance/send-password-recovery-email' },
   'POST  /api/v1/entrance/update-password-and-login': { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message': { action: 'deliver-contact-form-message' },
   'POST  /api/v1/observe-my-session': { action: 'observe-my-session', hasSocketFeatures: true },
 
+
+  'POST /test/create': 'TestController.create'
 };

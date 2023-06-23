@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-
   attributes: {
     id: { type: 'number', autoIncrement: true },
     createdAt: { type: 'number', autoCreatedAt: true },
@@ -17,7 +16,7 @@ module.exports = {
       unique: true,
       isEmail: true,
       maxLength: 200,
-      example: 'mary.sue@example.com'
+      example: 'mary.sue@example.com',
     },
-  }
+  },
 };
