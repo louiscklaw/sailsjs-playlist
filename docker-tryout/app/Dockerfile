@@ -1,10 +1,10 @@
-FROM node:18-ubuntu-slim
+FROM node:18-bullseye-slim
 
 RUN mkdir -p /app
-RUN chown -r 1000:1000 /app
+RUN chown -R 1000:1000 /app
 
 RUN mkdir -p /app/node_modules
-RUN chown -r 1000:1000 /app/node_modules
+RUN chown -R 1000:1000 /app/node_modules
 
 
 WORKDIR /app
